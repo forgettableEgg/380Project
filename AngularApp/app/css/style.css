@@ -79,9 +79,13 @@ body {
 
 .skit {
     margin-top: 1rem;
-    padding-bottom: 0.25rem;
+    padding: 0.75rem 0.25rem 0.25rem 0.25rem;
     background: #fff;
-    border: solid #000;
+    border: 1px solid rgba(19, 35, 47, 0.9);
+}
+
+.skit:hover {
+    background: rgba(19, 35, 47, 0.2);
 }
 
 .skit-reply {
