@@ -1,0 +1,90 @@
+/*Landing Page*/
+.page-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(19, 35, 47, 0.9);
+    color: #fff;
+    height: 4rem;
+}
+
+.landing-list {
+    font-size: 24px;
+}
+
+.landing-list i {
+    margin-right: 0.25rem;
+}
+
+.center-background {
+    background: #edf0f5;
+}
+
+/*Nav Bar*/
+.btn-outline-skitter {
+    color: #1ab188;
+    background: transparent none;
+    border-color: #1ab188;
+}
+
+.btn-outline-skitter:hover {
+    color: #fff;
+    background-color: #179b77;
+    border-color: #179b77;
+}
+
+.skitter-brand {
+    font-size: 2rem;
+    color: #fff;
+    float: left;
+    margin-right: 1rem;
+}
+
+.skitter-nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    line-height: 3rem;
+}
+
+/*Homepage*/
+.btn-skit {
+    color: #fff;
+    background-color: #1ab188;
+    width: 6rem;
+}
+
+.btn-skit:hover {
+    color: #fff;
+    background-color: #179b77;
+}
+
+/*General*/
+body {
+    padding-top: 4rem;
+}
+
+.item-spacing {
+    margin: 0 10px 0 10px;
+}
+
+.vertical-spacing {
+    margin-top: 1rem;
+}
+
+.vertical-padding {
+    padding-top: 1rem;
+}
+
+.skit {
+    margin-top: 1rem;
+    padding-bottom: 0.25rem;
+    background: #fff;
+    border: solid #000;
+}
+
+.skit-reply {
+    position: absolute;
+    bottom: 0;
+}

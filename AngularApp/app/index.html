@@ -1,43 +1,125 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <title>Skitter</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Skitter is THE new social media experience for anyone with internet access.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" type="image/ico" href="favicon.ico?">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
+<div class="page-header text-xs-center">
+    <h1>Skitter</h1>
+</div>
+<div class="container-fluid center-background">
+    <div class="row">
+        <div class="col-sm-5 offset-sm-1" style="margin-top: 40px">
+            <h2>Use Skitter to get your skits out there.</h2>
+            <p class="vertical-spacing landing-list">
+                <i class="fa fa-comment fa-2x" aria-hidden="true"></i> Get your skits heard
+            </p>
+            <p class="landing-list">
+                <i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i> Check out the dopest skits
+            </p>
+            <p class="landing-list">
+                <i class="fa fa-magic fa-2x" aria-hidden="true"></i> Automagical authentication
+            </p>
+        </div>
+        <div class="col-sm-6" id="login-register-widget">
+            <div class="form">
+                <ul class="tab-group">
+                    <li class="tab active"><a href="#login">Log In</a></li>
+                    <li class="tab"><a href="#signup">Sign Up</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="login">
+                        <h1>Welcome Back!</h1>
+                        <form action="/" method="post">
+                            <div class="field-wrap">
+                                <label>
+                                    Email Address<span class="req">*</span>
+                                </label>
+                                <input type="email" required autocomplete="off"/>
+                            </div>
+                            <div class="field-wrap">
+                                <label>
+                                    Password<span class="req">*</span>
+                                </label>
+                                <input type="password" required autocomplete="off"/>
+                            </div>
+                            <p class="forgot"><a href="#">Forgot Password?</a></p>
+                            <button class="button button-block">Log In</button>
+                        </form>
+                    </div>
+                    <div id="signup">
+                        <h1>Sign Up for Free</h1>
+                        <form action="/" method="post">
+                            <div class="top-row">
+                                <div class="field-wrap">
+                                    <label>
+                                        First Name<span class="req">*</span>
+                                    </label>
+                                    <input type="text" required autocomplete="off"/>
+                                </div>
+                                <div class="field-wrap">
+                                    <label>
+                                        Last Name<span class="req">*</span>
+                                    </label>
+                                    <input type="text" required autocomplete="off"/>
+                                </div>
+                            </div>
+                            <div class="field-wrap">
+                                <label>
+                                    Email Address<span class="req">*</span>
+                                </label>
+                                <input type="email" required autocomplete="off"/>
+                            </div>
+                            <div class="field-wrap">
+                                <label>
+                                    Set A Password<span class="req">*</span>
+                                </label>
+                                <input type="password" required autocomplete="off"/>
+                            </div>
+                            <button type="submit" class="button button-block">Get Started</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="text-xs-center">
+    <p class="navbar-text item-spacing">Skitter <i class="fa fa-copyright" aria-hidden="true"></i> 2016</p>
+    <a class="item-spacing" href="https://github.com/rjm6823/380Project" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+        Find us on Github
+    </a>
+</footer>
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-
-  <div ng-view></div>
-
-  <div>Angular seed app: v<span app-version></span></div>
-
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="view1/view1.js"></script>
+<script src="view2/view2.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>

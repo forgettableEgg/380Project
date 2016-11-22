@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <title>Skitter</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Skitter is THE new social media experience for anyone with internet access.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/ico" href="favicon.ico?">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top page-header" role="navigation">
+    <a class="skitter-brand" href="#">Skitter</a>
+    <ul class="nav navbar-nav">
+        <li class="nav-item active">
+            <a class="skitter-nav-item" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="skitter-nav-item" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="skitter-nav-item" href="#">Link</a>
+        </li>
+    </ul>
+    <form class="form-inline float-lg-right">
+        <input class="form-control" type="text" placeholder="Search">
+        <button class="btn btn-outline-skitter" type="submit">Search</button>
+    </form>
+</nav>
+<div class="container-fluid center-background">
+    <div class="row vertical-padding">
+        <div class="col-sm-2 offset-sm-1">
+            <img src="images/Square_200x200.png" alt="Your Sweet Avatar" class="img-thumbnail">
+            <p class="vertical-spacing">Jon Doe</p>
+            <p>1337 Skits</p>
+            <p>0 Following</p>
+            <p>42 Followers</p>
+        </div>
+        <div class="col-sm-7">
+            <div class="row">
+                <form>
+                    <div class="input-group">
+                        <label class="sr-only" for="quickSkit">Enter Skit</label>
+                        <input type="text" class="form-control" id="quickSkit" placeholder="Wanna skit?">
+                        <span class="input-group-btn">
+                        <button type="submit" class="btn btn-skit">Skit</button>
+                    </span>
+                    </div>
+                </form>
+            </div>
+            <div class="row skit" id="skit1">
+                <div class="col-sm-2">
+                    <img src="images/70x70.jpg" alt="Your Sweet Avatar" class="img-thumbnail">
+                    <p>Steve Smith</p>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>1 2 3... Testing this new social media platform</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form>
+                                <div class="input-group">
+                                    <label class="sr-only" for="reply1">Reply to skit</label>
+                                    <input type="text" class="form-control" id="reply1" placeholder="Reply...">
+                                    <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-skit">Reply</button>
+                                </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="view1/view1.js"></script>
+<script src="view2/view2.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
