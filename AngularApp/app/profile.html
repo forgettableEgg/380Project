@@ -34,7 +34,7 @@
             <a class="skitter-nav-item" href="#">Profile</a>
         </li>
         <li class="nav-item">
-            <a class="skitter-nav-item" href="#">Link</a>
+            <a class="skitter-nav-item" href="#">Settings</a>
         </li>
     </ul>
     <form class="form-inline float-lg-right">
@@ -42,24 +42,92 @@
         <button class="btn btn-outline-skitter" type="submit">Search</button>
     </form>
 </nav>
-<div class="container-fluid">
-    <p>Left Panel</p>
-    <ul>
-        <li>Your Name</li>
-        <li>Date Joined</li>
-        <li>Favourite Color</li>
-        <li>Settings/Follow</li>
-    </ul>
-    <p>Main Area</p>
-    <ul>
-        <li>Selections</li>
-            <ul>
-                <li>Skits</li>
-                <li>Following</li>
-                <li>Followers</li>
-            </ul>
-        <li>Selected information</li>
-    </ul>
+<div class="container-fluid center-background">
+    <div class="row vertical-padding">
+        <div class="col-sm-2 offset-sm-1">
+            <img src="images/Square_200x200.png" alt="Your Sweet Avatar" class="img-thumbnail">
+            <p class="vertical-spacing">Jon Doe</p>
+            <p>Joined 11/11/2016</p>
+            <a href="settings.html">Settings</a>
+        </div>
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="#" class="profile-content-select">Skits</a>
+                    <a href="#" class="profile-content-select">Following</a>
+                    <a href="#" class="profile-content-select">Followers</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row skit" id="skit1">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <img src="images/70x70.jpg" alt="Your Sweet Avatar" class="img-thumbnail">
+                                <p>Jon Doe</p>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="col-sm-11">
+                                    <p>Having a super fnatabulous day</p>
+                                </div>
+                                <div class="col-sm-1">
+                                    <a href="#" class="float-xs-right">
+                                        <i class="fa fa-times fa-2x skit-delete" aria-hidden="true"><span
+                                                class="sr-only">Delete Skit</span></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-9 offset-sm-2">
+                                    <form>
+                                        <div class="input-group">
+                                            <label class="sr-only" for="reply1">Reply to skit</label>
+                                            <input type="text" class="form-control" id="reply1" placeholder="Reply...">
+                                            <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-skit">Reply</button>
+                                </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row skit" id="skit2">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <img src="images/70x70.jpg" alt="Your Sweet Avatar" class="img-thumbnail">
+                                <p>Jon Doe</p>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="col-sm-11">
+                                    <p>¯\_(ツ)_/¯</p>
+                                </div>
+                                <div class="col-sm-1">
+                                    <a href="#" class="float-xs-right">
+                                        <i class="fa fa-times fa-2x skit-delete" aria-hidden="true"><span
+                                                class="sr-only">Delete Skit</span></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-9 offset-sm-2">
+                                    <form>
+                                        <div class="input-group">
+                                            <label class="sr-only" for="reply2">Reply to skit</label>
+                                            <input type="text" class="form-control" id="reply2" placeholder="Reply...">
+                                            <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-skit">Reply</button>
+                                </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
