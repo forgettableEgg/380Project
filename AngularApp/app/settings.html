@@ -34,7 +34,7 @@
             <a class="skitter-nav-item" href="#">Profile</a>
         </li>
         <li class="nav-item">
-            <a class="skitter-nav-item" href="#">Link</a>
+            <a class="skitter-nav-item" href="#">Settings</a>
         </li>
     </ul>
     <form class="form-inline float-lg-right">
@@ -42,12 +42,39 @@
         <button class="btn btn-outline-skitter" type="submit">Search</button>
     </form>
 </nav>
-<div class="container-fluid">
-    <p>Main Area</p>
-    <ul>
-        <li>Form to edit available info</li>
-        <li>Set two factor auth</li>
-    </ul>
+<div class="container-fluid center-background">
+    <div class="row vertical-padding bottom-padding">
+        <div class="col-xs-10 offset-sm-1">
+            <form>
+                <div class="form-group">
+                    <label for="profileFName">First Name</label>
+                    <input type="text" class="form-control" id="profileFName" aria-describedby="firstName"
+                           placeholder="Jon">
+                </div>
+                <div class="form-group">
+                    <label for="profileLName">Last Name</label>
+                    <input type="text" class="form-control" id="profileLName" aria-describedby="lastName"
+                           placeholder="Doe">
+                </div>
+                <div class="form-group">
+                    <label for="profileBio">Bio</label>
+                    <textarea class="form-control" id="profileBio" aria-describedby="bio"
+                              placeholder="Things about you!"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="profileBirthday">Birthday</label>
+                    <input type="date" class="form-control" id="profileBirthday" aria-describedby="birthday">
+                </div>
+                <div class="form-group">
+                    <label for="profileColor">Favourite Color</label>
+                    <input type="text" class="form-control" id="profileColor" aria-describedby="favouriteColor"
+                           placeholder="Green">
+                </div>
+            </form>
+            <a href="#" class="btn btn-skit">Set Up Two Factor Authentication</a>
+            <a href="#" class="btn btn-danger pull-right">Cancel</a>
+        </div>
+    </div>
 </div>
 
 <script src="bower_components/angular-route/angular-route.js"></script>

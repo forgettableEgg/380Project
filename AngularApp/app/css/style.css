@@ -1,12 +1,15 @@
 /*Landing Page*/
 .page-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     background: rgba(19, 35, 47, 0.9);
     color: #fff;
     height: 4rem;
+}
+
+.skitter-banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .landing-list {
@@ -48,21 +51,39 @@
     line-height: 3rem;
 }
 
-/*Homepage*/
-.btn-skit {
-    color: #fff;
-    background-color: #1ab188;
-    width: 6rem;
+/*Profile*/
+.skit-delete {
+    color: rgba(19, 35, 47, 0.9);
 }
 
-.btn-skit:hover {
-    color: #fff;
-    background-color: #179b77;
+.skit-delete:hover {
+    color: #a94442;
+}
+
+.profile-content-select {
+    color: rgba(19, 35, 47, 0.9);
+    text-decoration: none;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+    border-bottom: 0 solid #179b77;
+    transition: border-bottom 0.15s ease-in-out;
+}
+
+.profile-content-select:hover {
+    color: rgba(19, 35, 47, 0.9);
+    text-decoration: none;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+    border-bottom: 5px solid #179b77;
 }
 
 /*General*/
 body {
     padding-top: 4rem;
+    padding-bottom: 4rem;
+
 }
 
 .item-spacing {
@@ -77,14 +98,32 @@ body {
     padding-top: 1rem;
 }
 
+.bottom-padding {
+    padding-bottom: 1rem;
+}
+
 .skit {
     margin-top: 1rem;
-    padding-bottom: 0.25rem;
+    padding: 0.75rem 0.25rem 0.25rem 0.25rem;
     background: #fff;
-    border: solid #000;
+    border: 1px solid rgba(19, 35, 47, 0.9);
+}
+
+.skit:hover {
+    background: rgba(19, 35, 47, 0.2);
 }
 
 .skit-reply {
     position: absolute;
     bottom: 0;
+}
+
+.btn-skit {
+    color: #fff;
+    background-color: #1ab188;
+}
+
+.btn-skit:hover {
+    color: #fff;
+    background-color: #179b77;
 }
