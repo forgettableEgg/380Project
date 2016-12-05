@@ -13,19 +13,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Skitter is THE new social media experience for anyone with internet access.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id"
+          content="178912166127-1tn3veavmgoljhubfbifn2htl1dd4me1.apps.googleusercontent.com">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/ico" href="favicon.ico?">
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
 <div class="page-header text-xs-center">
+    <a href="#" onclick="signOut();">Sign out</a>
     <h1>Skitter</h1>
 </div>
 <div class="container-fluid center-background">
@@ -51,22 +55,24 @@
                 <div class="tab-content">
                     <div id="login">
                         <h1>Welcome Back!</h1>
-                        <form action="/" method="post">
-                            <div class="field-wrap">
-                                <label>
-                                    Email Address<span class="req">*</span>
-                                </label>
-                                <input type="email" required autocomplete="off"/>
-                            </div>
-                            <div class="field-wrap">
-                                <label>
-                                    Password<span class="req">*</span>
-                                </label>
-                                <input type="password" required autocomplete="off"/>
-                            </div>
-                            <p class="forgot"><a href="#">Forgot Password?</a></p>
-                            <button class="button button-block">Log In</button>
-                        </form>
+                        <a class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></a>
+                        <!--Old Login Form-->
+                        <!--<form action="/" method="post">-->
+                        <!--<div class="field-wrap">-->
+                        <!--<label>-->
+                        <!--Email Address<span class="req">*</span>-->
+                        <!--</label>-->
+                        <!--<input type="email" required autocomplete="off"/>-->
+                        <!--</div>-->
+                        <!--<div class="field-wrap">-->
+                        <!--<label>-->
+                        <!--Password<span class="req">*</span>-->
+                        <!--</label>-->
+                        <!--<input type="password" required autocomplete="off"/>-->
+                        <!--</div>-->
+                        <!--<p class="forgot"><a href="#">Forgot Password?</a></p>-->
+                        <!--<button class="button button-block">Log In</button>-->
+                        <!--</form>-->
                     </div>
                     <div id="signup">
                         <h1>Sign Up for Free</h1>
