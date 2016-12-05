@@ -28,8 +28,6 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
-<div class="page-header text-xs-center">
-    <a href="#" onclick="signOut();">Sign out</a>
 <div class="skitter-banner page-header text-xs-center">
     <h1>Skitter</h1>
 </div>
@@ -56,7 +54,9 @@
                 <div class="tab-content">
                     <div id="login">
                         <h1>Welcome Back!</h1>
-                        <a class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></a>
+						<a class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></a>
+						<br>
+						<a href="#" onclick="signOut();">Sign out</a>
                         <!--Old Login Form-->
                         <!--<form action="/" method="post">-->
                         <!--<div class="field-wrap">-->
