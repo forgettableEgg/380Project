@@ -1,6 +1,6 @@
 <?php
  error_reporting( ~E_NOTICE ); // avoid notice
- require_once 'dbconfig.php';
+ require_once 'db_config.php';
  
  if(isset($_POST['btnsave']))
  {
