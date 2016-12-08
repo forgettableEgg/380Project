@@ -1,0 +1,4 @@
+src/main/java/application.properties
+target
+.idea
+gs-rest-service.iml
