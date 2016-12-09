@@ -32,5 +32,5 @@ elastic.indexExists().then(function (exists) {
     return Promise.all(promises);
   });
 });
-
+console.log("Both Skits Added and Deleted");
 //This should delete the two Tweets I just entered
