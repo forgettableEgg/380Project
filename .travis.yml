@@ -7,4 +7,4 @@ node_js:
     - "0.6"
     - "iojs"
 script:
-    - npm test
+    - npm /NodeApp/skitter/
