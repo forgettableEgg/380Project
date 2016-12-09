@@ -23,7 +23,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 </head>
-<body>
+<body ng-controller="homeController">
 <nav class="navbar navbar-fixed-top page-header" role="navigation">
     <a class="skitter-brand" href="#">Skitter</a>
     <ul class="nav navbar-nav">
@@ -56,22 +56,22 @@
                 <form>
                     <div class="input-group">
                         <label class="sr-only" for="quickSkit">Enter Skit</label>
-                        <input type="text" class="form-control" id="quickSkit" placeholder="Wanna skit?">
+                        <input type="text" class="form-control" id="quickSkit" placeholder="Wanna skit?"ng-model="newSkit">
                         <span class="input-group-btn">
-                        <button type="submit" class="btn btn-skit">Skit</button>
+                        <button type="submit" class="btn btn-skit"ng-click="addDocument()">Skit</button>
                     </span>
                     </div>
                 </form>
             </div>
-            <div class="row skit" id="skit1">
+            <div class="row skit" ng-repeat="skit in skits">
                 <div class="row">
                     <div class="col-sm-2">
                         <img src="images/70x70.jpg" alt="Your Sweet Avatar" class="img-thumbnail">
-                        <p>Steve Smith</p>
+                        <p>{{skit._source.name}}</p>
                     </div>
                     <div class="col-sm-9">
                         <div class="col-sm-12">
-                            <p>1 2 3... Testing this new social media platform</p>
+                            <p>{{skit._source.content}}</p>
                         </div>
                     </div>
                     <div class="row">

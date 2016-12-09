@@ -62,7 +62,7 @@ function addDocument(skit) {
         index: indexName,
         type: "skit",
         body: {
-            name: skit.title,
+            name: skit.name,
             content: skit.content,
             suggest: {
                 input: skit.name.split(" "),
@@ -82,16 +82,18 @@ function removeDocument(skit) {
     });
 }
 exports.removeDocument = removeDocument;
-//
-// function getAllSkitsByName(input) {
-//   return elasticClient.search({
-//     index: "skitter",
-//     q: 'name:' + input
-//   });
-// }
-// exports.removeDocument = removeDocument;
+
+function searchDocuments(input) {
+  console.log(input)
+  return elasticClient.search({
+    index: "skitter",
+    q: 'name:' + input
+  });
+}
+exports.searchDocuments = searchDocuments;
 
 function getSuggestions(input) {
+  console.log(input);
     return elasticClient.suggest({
         index: "skitter",
         type: "skit",

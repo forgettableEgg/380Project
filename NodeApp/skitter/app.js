@@ -69,7 +69,8 @@ elastic.indexExists().then(function (exists) {
     //elasticsearch offers a bulk functionality as well, but this is for a different time
     var promises = [
       'Jason Sigman',
-      'Robert Madsen'
+      'Robert Madsen',
+      'Jason Sigman'
     ].map(function (skitName) {
       return elastic.addDocument({
         name: skitName,
