@@ -1,7 +1,5 @@
 package authentication;
 
-import java.sql.Date;
-
 public class User {
     private int Id;
     private String Email;
@@ -9,7 +7,7 @@ public class User {
     private String FirstName;
     private String Token;
     private String Picture;
-    private Date Token_Expiration;
+    private Long Token_Expiration;
 
     User() {
     }
@@ -62,11 +60,11 @@ public class User {
         Picture = picture;
     }
 
-    public Date getToken_Expiration() {
+    public Long getToken_Expiration() {
         return Token_Expiration;
     }
 
-    public void setToken_Expiration(Date token_Expiration) {
+    public void setToken_Expiration(Long token_Expiration) {
         Token_Expiration = token_Expiration;
     }
 }
