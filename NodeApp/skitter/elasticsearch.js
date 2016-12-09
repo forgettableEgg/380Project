@@ -8,8 +8,8 @@ var elasticClient = new elasticsearch.Client({
 var indexName = "skitter";
 
 /**
-* Delete an existing index
-*/
+ * Delete an existing index
+ */
 function deleteIndex() {
     return elasticClient.indices.delete({
         index: indexName
@@ -18,8 +18,8 @@ function deleteIndex() {
 exports.deleteIndex = deleteIndex;
 
 /**
-* create the index
-*/
+ * create the index
+ */
 function initIndex() {
     return elasticClient.indices.create({
         index: indexName
@@ -28,8 +28,8 @@ function initIndex() {
 exports.initIndex = initIndex;
 
 /**
-* check if the index exists
-*/
+ * check if the index exists
+ */
 function indexExists() {
     return elasticClient.indices.exists({
         index: indexName
@@ -75,25 +75,26 @@ function addDocument(skit) {
 exports.addDocument = addDocument;
 
 
-function removeDocument(skit) {
-    return elasticClient.deleteByQuery({
+function removeDocument(id) {
+    console.log(id.id)
+    return elasticClient.delete({
         index: "skitter",
-        q: "Test Skit1" //Concat correctly
+        type: "skit",
+        id: id.id
     });
 }
 exports.removeDocument = removeDocument;
 
 function searchDocuments(input) {
-  console.log(input)
-  return elasticClient.search({
-    index: "skitter",
-    q: 'name:' + input
-  });
+    return elasticClient.search({
+        index: "skitter",
+        q: 'name:' + input,
+        size: 50
+    });
 }
 exports.searchDocuments = searchDocuments;
 
 function getSuggestions(input) {
-  console.log(input);
     return elasticClient.suggest({
         index: "skitter",
         type: "skit",

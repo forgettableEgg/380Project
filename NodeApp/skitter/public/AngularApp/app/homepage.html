@@ -8,33 +8,33 @@
 <!--[if gt IE 8]><!-->
 <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
-    <title>Skitter</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Skitter is THE new social media experience for anyone with internet access.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/ico" href="favicon.ico?">
-    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<title>Skitter</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Skitter is THE new social media experience for anyone with internet access.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/ico" href="favicon.ico?">
+<script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 </head>
 <body ng-controller="homeController">
 <nav class="navbar navbar-fixed-top page-header" role="navigation">
     <a class="skitter-brand" href="#">Skitter</a>
     <ul class="nav navbar-nav">
         <li class="nav-item active">
-            <a class="skitter-nav-item" href="#">Home</a>
+        <a class="skitter-nav-item" href="#">Home</a>
         </li>
         <li class="nav-item">
-            <a class="skitter-nav-item" href="#">Profile</a>
+        <a class="skitter-nav-item" href="#">Profile</a>
         </li>
         <li class="nav-item">
-            <a class="skitter-nav-item" href="#">Settings</a>
+        <a class="skitter-nav-item" href="#">Settings</a>
         </li>
     </ul>
     <form class="form-inline float-lg-right">
@@ -58,8 +58,8 @@
                         <label class="sr-only" for="quickSkit">Enter Skit</label>
                         <input type="text" class="form-control" id="quickSkit" placeholder="Wanna skit?"ng-model="newSkit">
                         <span class="input-group-btn">
-                        <button type="submit" class="btn btn-skit"ng-click="addDocument()">Skit</button>
-                    </span>
+                            <button type="submit" class="btn btn-skit"ng-click="addDocument()">Skit</button>
+                        </span>
                     </div>
                 </form>
             </div>
@@ -79,88 +79,9 @@
                             <form>
                                 <div class="input-group">
                                     <label class="sr-only" for="reply1">Reply to skit</label>
-                                    <input type="text" class="form-control" id="reply1" placeholder="Reply...">
                                     <span class="input-group-btn">
-                                    <button type="submit" class="btn btn-skit">Reply</button>
-                                </span>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row skit" id="skit2">
-                <div class="row">
-                    <div class="col-sm-2">
-                        <img src="images/70x70.jpg" alt="Your Sweet Avatar" class="img-thumbnail">
-                        <p>Dude Guy</p>
-                    </div>
-                    <div class="col-sm-9">
-                        <div class="col-sm-12">
-                            <p>Meh ¯\_(ツ)_/¯</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-9 offset-sm-2">
-                            <form>
-                                <div class="input-group">
-                                    <label class="sr-only" for="reply2">Reply to skit</label>
-                                    <input type="text" class="form-control" id="reply2" placeholder="Reply...">
-                                    <span class="input-group-btn">
-                                    <button type="submit" class="btn btn-skit">Reply</button>
-                                </span>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row skit" id="skit3">
-                <div class="row">
-                    <div class="col-sm-2">
-                        <img src="images/70x70.jpg" alt="Your Sweet Avatar" class="img-thumbnail">
-                        <p>Jane Doe</p>
-                    </div>
-                    <div class="col-sm-9">
-                        <div class="col-sm-12">
-                            <p>I love skittering</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-9 offset-sm-2">
-                            <form>
-                                <div class="input-group">
-                                    <label class="sr-only" for="reply3">Reply to skit</label>
-                                    <input type="text" class="form-control" id="reply3" placeholder="Reply...">
-                                    <span class="input-group-btn">
-                                    <button type="submit" class="btn btn-skit">Reply</button>
-                                </span>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row skit" id="skit4">
-                <div class="row">
-                    <div class="col-sm-2">
-                        <img src="images/70x70.jpg" alt="Your Sweet Avatar" class="img-thumbnail">
-                        <p>Bill Jobs</p>
-                    </div>
-                    <div class="col-sm-9">
-                        <div class="col-sm-12">
-                            <p>Project work is best work</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-9 offset-sm-2">
-                            <form>
-                                <div class="input-group">
-                                    <label class="sr-only" for="reply4">Reply to skit</label>
-                                    <input type="text" class="form-control" id="reply4" placeholder="Reply...">
-                                    <span class="input-group-btn">
-                                    <button type="submit" class="btn btn-skit">Reply</button>
-                                </span>
+                                        <button type="submit" class="btn btn-skit"ng-click="removeDocument(skit)">Delete</button>
+                                    </span>
                                 </div>
                             </form>
                         </div>
@@ -169,7 +90,8 @@
             </div>
         </div>
     </div>
-    <div class=""></div>
+</div>
+<div class=""></div>
 </div>
 
 
